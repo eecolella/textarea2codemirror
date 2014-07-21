@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+
+    <!-- bower:css -->
+    <!-- endbower -->
+
+    <!-- build:css styles/options.css -->
+    <link href="styles/options.css" rel="stylesheet">
+    <!-- endbuild -->
+
+    <!-- bower:js -->
+    <!-- endbower -->
+
+    <!-- build:js scripts/options.js -->
+    <script src="scripts/options.js"></script>
+    <!-- endbuild -->
+</head>
+<body>
+    <h1>Textarea 2 CodeMirror Settings</h1>
+    <ul>
+        <li>
+            <label for="mode">Default mode:</label>
+            <select id="mode">
+                <option value='apl'>apl</option>
+                <option value='asterisk'>asterisk</option>
+                <option value='clike'>clike</option>
+                <option value='clojure'>clojure</option>
+                <option value='cobol'>cobol</option>
+                <option value='coffeescript'>coffeescript</option>
+                <option value='commonlisp'>commonlisp</option>
+                <option value='css'>css</option>
+                <option value='cypher'>cypher</option>
+                <option value='d'>d</option>
+                <option value='diff'>diff</option>
+                <option value='django'>django</option>
+                <option value='dtd'>dtd</option>
+                <option value='dylan'>dylan</option>
+                <option value='ecl'>ecl</option>
+                <option value='eiffel'>eiffel</option>
+                <option value='erlang'>erlang</option>
+                <option value='fortran'>fortran</option>
+                <option value='gas'>gas</option>
+                <option value='gfm'>gfm</option>
+                <option value='gherkin'>gherkin</option>
+                <option value='go'>go</option>
+                <option value='groovy'>groovy</option>
+                <option value='haml'>haml</option>
+                <option value='haskell'>haskell</option>
+                <option value='haxe'>haxe</option>
+                <option value='htmlembedded'>htmlembedded</option>
+                <option selected value='htmlmixed'>htmlmixed</option>
+                <option value='http'>http</option>
+                <option value='jade'>jade</option>
+                <option value='javascript'>javascript</option>
+                <option value='jinja2'>jinja2</option>
+                <option value='julia'>julia</option>
+                <option value='livescript'>livescript</option>
+                <option value='lua'>lua</option>
+                <option value='markdown'>markdown</option>
+                <option value='mirc'>mirc</option>
+                <option value='mllike'>mllike</option>
+                <option value='nginx'>nginx</option>
+                <option value='ntriples'>ntriples</option>
+                <option value='octave'>octave</option>
+                <option value='pascal'>pascal</option>
+                <option value='pegjs'>pegjs</option>
+                <option value='perl'>perl</option>
+                <option value='php'>php</option>
+                <option value='properties'>properties</option>
+                <option value='puppet'>puppet</option>
+                <option value='python'>python</option>
+                <option value='q'>q</option>
+                <option value='r'>r</option>
+                <option value='rpm'>rpm</option>
+                <option value='rst'>rst</option>
+                <option value='ruby'>ruby</option>
+                <option value='rust'>rust</option>
+                <option value='sass'>sass</option>
+                <option value='scheme'>scheme</option>
+                <option value='shell'>shell</option>
+                <option value='sieve'>sieve</option>
+                <option value='smalltalk'>smalltalk</option>
+                <option value='smarty'>smarty</option>
+                <option value='smartymixed'>smartymixed</option>
+                <option value='solr'>solr</option>
+                <option value='sparql'>sparql</option>
+                <option value='sql'>sql</option>
+                <option value='stex'>stex</option>
+                <option value='tcl'>tcl</option>
+                <option value='tiddlywiki'>tiddlywiki</option>
+                <option value='tiki'>tiki</option>
+                <option value='toml'>toml</option>
+                <option value='turtle'>turtle</option>
+                <option value='vb'>vb</option>
+                <option value='vbscript'>vbscript</option>
+                <option value='velocity'>velocity</option>
+                <option value='verilog'>verilog</option>
+                <option value='xml'>xml</option>
+                <option value='xquery'>xquery</option>
+                <option value='yaml'>yaml</option>
+                <option value='z80'>z80</option>
+            </select>
+            <a class="docs" href="http://codemirror.net/mode/"><img src="images/external-link-icon.gif"/></a>
+        </li>
+        <li>
+            <label for="theme">Default theme:</label>
+            <select id="theme">
+                <option value='3024-day'>3024-day</option>
+                <option value='3024-night'>3024-night</option>
+                <option value='ambiance-mobile'>ambiance-mobile</option>
+                <option value='ambiance'>ambiance</option>
+                <option value='base16-dark'>base16-dark</option>
+                <option value='base16-light'>base16-light</option>
+                <option value='blackboard'>blackboard</option>
+                <option value='cobalt'>cobalt</option>
+                <option selected value='default'>default</option>
+                <option value='eclipse'>eclipse</option>
+                <option value='elegant'>elegant</option>
+                <option value='erlang-dark'>erlang-dark</option>
+                <option value='lesser-dark'>lesser-dark</option>
+                <option value='mbo'>mbo</option>
+                <option value='mdn-like'>mdn-like</option>
+                <option value='midnight'>midnight</option>
+                <option value='monokai'>monokai</option>
+                <option value='neat'>neat</option>
+                <option value='neo'>neo</option>
+                <option value='night'>night</option>
+                <option value='paraiso-dark'>paraiso-dark</option>
+                <option value='paraiso-light'>paraiso-light</option>
+                <option value='pastel-on-dark'>pastel-on-dark</option>
+                <option value='rubyblue'>rubyblue</option>
+                <option value='solarized'>solarized</option>
+                <option value='the-matrix'>the-matrix</option>
+                <option value='tomorrow-night-eighties'>tomorrow-night-eighties</option>
+                <option value='twilight'>twilight</option>
+                <option value='vibrant-ink'>vibrant-ink</option>
+                <option value='xq-dark'>xq-dark</option>
+                <option value='xq-light'>xq-light</option>
+            </select>
+            <a class="docs" href="http://codemirror.net/demo/theme.html"><img src="images/external-link-icon.gif"/></a>
+        </li>
+        <li>
+            <span id="status"></span>
+        </li>
+    </ul>
+
+
+    <h1>Textarea 2 CodeMirror Shortcuts</h1><a class="docs"
+                                               href="https://github.com/marijnh/CodeMirror/blob/1cbf1f64001b36dc7115f6a36c0f919f59c434fa/lib/codemirror.js#L2880"><img
+    src="images/external-link-icon.gif"/></a>
+    <ul>
+        <li>
+            <label>F8</label>
+            <span>Open editor</span>
+        </li>
+        <li>
+            <label>F9</label>
+            <span>Open merge tool</span>
+        </li>
+        <li>
+            <label>Esc</label>
+            <span>Close editor/merge tool</span>
+        </li>
+        <li>
+            <label>Ctrl/Cmd-F</label>
+            <span>Find</span>
+        </li>
+        <li>
+            <label>Ctrl/Cmd-G</label>
+            <span>Find next</span>
+        </li>
+        <li>
+            <label>Shift-Ctrl/Cmd-G</label>
+            <span>Find prev</span>
+        </li>
+        <li>
+            <label>Shift-Ctrl/Cmd-F</label>
+            <span>Replace</span>
+        </li>
+        <li>
+            <label>Shift-Ctrl/Cmd-R</label>
+            <span>Replace All</span>
+        </li>
+        <li>
+            <label>Alt-Q</label>
+            <span>Folding</span>
+        </li>
+    </ul>
+
+    <a id="github" href=""><img src="images/github.png" alt=""/></a>
+</body>
+</html>
